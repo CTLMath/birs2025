@@ -16,7 +16,7 @@ Web-based, open-source mathematical software and computational resources are now
 
 | Date | Time (MT) | Description |
 | :---: | :---: | --- |
-| May 15 | 11:00 | Pre-Workshop: [Examples](examples.md) |
+| May 14 | 11:00 | Pre-Workshop: [Examples](examples.md) |
 |        | 12:00 | Pre-Workshop: [Software](software.md) |
 | May 23 | 14:00 | Open Session: Set Goals, Brainstorm, Software Installation, etc. |
 |        | 16:00 | Check-in at Banff Centre |
