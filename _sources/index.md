@@ -27,6 +27,7 @@ Web-based, open-source mathematical software and computational resources are now
 |        | 10:30 | Break |
 |        | 11:00 | [Strategies for Implementation](implementation) |
 |        | 12:00 | Lunch (courtesy of [PIMS](https://www.pims.math.ca)) |
+|        | 13:45 | Group Photo |
 |        | 14:00 | [Working Groups](groups.md) |
 |        | 16:00 | Working Groups Progress Reports |
 |        | 16:30 | Break |
@@ -40,6 +41,7 @@ Web-based, open-source mathematical software and computational resources are now
 
 ## Resources
 
+* [BIRS Events Page](https://www.birs.ca/events/2025/2-day-workshops/25w2027)
 * [Computational Thinking in University Mathematics](https://ctuniversitymath.ca)
 * [Mathematical Python](https://patrickwalls.github.io/mathematicalpython/)
 * [Teaching and Learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/)
