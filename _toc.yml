@@ -1,6 +1,8 @@
 format: jb-book
 root: index
 chapters:
+- file: preworkshop
+  title: Pre-Workshop
 - file: examples
   title: Examples
 - file: software
