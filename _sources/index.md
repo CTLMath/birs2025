@@ -12,6 +12,13 @@ Web-based, open-source mathematical software and computational resources are now
 * Provide explicit software training for instructors
 * Create and share computational learning material and assessments
 
+## Organizers
+
+* Shawn Desaulniers (University of Alberta)
+* Katie Faulkner (University of British Columbia)
+* Pam Sargent (University of Toronto)
+* Patrick Walls (University of British Columbia)
+
 ## Schedule
 
 | Date | Time (MT) | Description |
@@ -49,4 +56,8 @@ Web-based, open-source mathematical software and computational resources are now
 
 ## Acknowledgements
 
-* Thank you to [PIMS](https://www.pims.math.ubc.ca) ...
+Thank you to the [Banff International Research Station (BIRS)](https://www.birs.ca) for hosting and supporting our event!
+
+Thank you to the [Pacific Institute for the Mathematical Sciences (PIMS)](https://www.pims.math.ubc.ca) for providing funding for our event, for creating and maintaining [Syzygy](https://syzygy.ca) and for supporting computational teaching and learning in Canada!
+
+<img src="http://media.pims.math.ca/logos/horizfull3.svg" width="75%" style="margin: auto; display:block;">
