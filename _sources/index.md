@@ -7,6 +7,8 @@ Computational thinking is the process of formulating problems and their solution
 
 Web-based, open-source mathematical software and computational resources are now more widely available than ever. [Python](https://python.org) is a general purpose programming language and [Jupyter](https://jupyter.org) is a web-based development environment for creating computational documents. We propose to develop new modes of teaching and learning based on Python and Jupyter which promote computational thinking and which complement the current undergraduate mathematics curriculum.
 
+See the [BIRS Events Page](https://www.birs.ca/events/2025/2-day-workshops/25w2027) for more info.
+
 ## Objectives
 
 * Outline a set of standards for computational teaching and learning in mathematics
@@ -45,15 +47,6 @@ Web-based, open-source mathematical software and computational resources are now
 |        | 11:00 | Break |
 |        | 11:30 | Working Groups Progress Reports |
 |        | 12:00 | Wrap-up and Lunch |
-
-## Resources
-
-* [BIRS Events Page](https://www.birs.ca/events/2025/2-day-workshops/25w2027)
-* [Computational Thinking in University Mathematics](https://ctuniversitymath.ca)
-* [Python for UBC Math](https://ubcmath.github.io/python/)
-* [Mathematical Python](https://patrickwalls.github.io/mathematicalpython/)
-* [Teaching and Learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/)
-* [Teaching Tech Together](https://teachtogether.tech/en/index.html)
 
 ## Acknowledgements
 
