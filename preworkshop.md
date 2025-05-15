@@ -44,8 +44,8 @@ Select *Download the repository* and click *Clone*. You should see a folder call
 * Enter a description (perhaps *Syzygy* since this is where we are using the token)
 * Choose an expiration date (or choose *No expiration* if you like)
 * From *Select scopes* select **repo**
-* Click *Generate token*.
-* Copy the token, create a new text file on Syzygy, paste the token and save.
+* Click *Generate token*
+* Copy the token, create a new text file on Syzygy, paste the token and save
 
 **Step 3.** Create a new GitHub repository:
 
@@ -65,7 +65,7 @@ Select *Download the repository* and click *Clone*. You should see a folder call
 * Click *Clone a Repository*, paste the repo URL, select *Download the repository* and click *Clone*
 * You should see the repository folder in your file navigation window on Syzygy
 
-**Step 5.** Commit and push changes to GitHub
+**Step 5.** Commit and push changes to GitHub:
 
 * Go to the file navigation window on Syzygy and click the folder for the repo that you just cloned from GitHub
 * Open the file <em>README.md</em>, make a change and save
@@ -84,7 +84,7 @@ Download and install [conda](https://www.anaconda.com/docs/getting-started/getti
 
 ## nbgrader
 
-[nbgrader](https://nbgrader.readthedocs.io) is a Python package for creating and managing auto-graded assignments in Jupyter notebooks. Unfortunately, nbgrader does not work on Syzygy and so users must install Python and Jupyter on their own machines to create nbgrader assignments.
+[nbgrader](https://nbgrader.readthedocs.io) is a Python package for creating and managing autograded assignments in Jupyter notebooks. Unfortunately, nbgrader does not work on Syzygy and so users must install Python and Jupyter on their own machines to create nbgrader assignments.
 
 Once you are running Python and Jupyter on your machine, install nbgrader:
 
