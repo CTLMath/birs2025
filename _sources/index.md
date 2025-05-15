@@ -1,5 +1,6 @@
 # BIRS Workshop on Computational Teaching and Learning in Mathematics
 
+*Banff, Alberta, Canada* <br>
 *May 23-25, 2025*
 
 Computational thinking is the process of formulating problems and their solutions in ways that a computer can implement, and computational teaching is the set of instructional practices designed for computational thinking. Computational teaching and learning have always been an important part of undergraduate mathematics education however student access to mathematical software and computational resources have been limited in the past.
