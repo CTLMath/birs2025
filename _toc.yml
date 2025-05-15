@@ -3,6 +3,8 @@ root: index
 chapters:
 - file: preworkshop
   title: Pre-Workshop
+- file: resources
+  title: Resources
 - file: examples
   title: Examples
 - file: software
