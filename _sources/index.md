@@ -29,7 +29,7 @@ See the [BIRS Events Page](https://www.birs.ca/events/2025/2-day-workshops/25w20
 | May 14 | 11:00 | [Pre-Workshop Activities](preworkshop.md) |
 | May 23 | 14:00 | Open Session: Set Goals, Brainstorm, Software Installation, etc. |
 |        | 16:00 | Check-in at Banff Centre |
-|        | 17:00 | [Patrick Walls](https://patrickwalls.github.io): Overview and Examples of Computational Teaching at UBC |
+|        | 17:00 | [Patrick Walls: Overview and Examples of Computational Teaching at UBC](talks.md) |
 |        | 18:30 | Dinner |
 | May 24 | 07:00 | Breakfast (courtesy of [PIMS](https://www.pims.math.ca)) |
 |        | 09:00 | [Instructional Design for Computational Teaching](design.md) |
@@ -40,7 +40,7 @@ See the [BIRS Events Page](https://www.birs.ca/events/2025/2-day-workshops/25w20
 |        | 14:00 | [Working Groups](groups.md) |
 |        | 16:00 | Working Groups Progress Reports |
 |        | 16:30 | Break |
-|        | 17:00 | [Danny Caballero](https://dannycaballero.info): Supporting the Integration of Numerical Computing in Physics Education |
+|        | 17:00 | [Danny Caballero: Supporting the Integration of Numerical Computing in Physics Education](talks.md) |
 |        | 18:00 | Dinner |
 | May 25 | 07:00 | Breakfast (courtesy of [PIMS](https://www.pims.math.ca)) |
 |        | 09:00 | [Working Groups](groups.md) |
