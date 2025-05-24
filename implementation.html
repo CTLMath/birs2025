@@ -171,7 +171,11 @@
 <li class="toctree-l1"><a class="reference internal" href="preworkshop.html">Pre-Workshop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="talks/index.html">Talks</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="talks/ctlmath.html">Computational Teaching and Learning in Mathematics at UBC</a></li>
+
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="design.html">Design</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Implementation</a></li>
@@ -348,7 +352,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -364,6 +370,23 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-exchanges-without-extra-tools">File Exchanges without extra tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posting-the-notebook">1. Posting the notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#students-complete-the-notebook">2. Students complete the notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notebook-grading-and-feedback">3. Notebook grading and feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-within-the-notebook">3.1 Feedback within the notebook</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-in-lms-grading-tools">3.2 Feedback in LMS grading tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -376,6 +399,94 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="strategies-for-implementation">
 <h1>Strategies for Implementation<a class="headerlink" href="#strategies-for-implementation" title="Link to this heading">#</a></h1>
 <p>We will explore different systems of varying complexity to share, collect, grade and return computational documents. The simplest workflow involves Syzygy, a learning management system (LMS) and manual grading. We will also describe a workflow involving Syzygy, LMS, nbgrader and LMS API to manage, autograde and upload grades and feedback for thousands of students.</p>
+<section id="file-exchanges-without-extra-tools">
+<h2>File Exchanges without extra tools<a class="headerlink" href="#file-exchanges-without-extra-tools" title="Link to this heading">#</a></h2>
+<p>You will need to plan out how to deliver notebooks to students, how the students will work in the notebooks, how you will grade their notebooks, and how the students will view the feedback on their notebooks.</p>
+<section id="posting-the-notebook">
+<h3>1. Posting the notebook<a class="headerlink" href="#posting-the-notebook" title="Link to this heading">#</a></h3>
+<p>The easiest place to post the notebook is wherever you usually post files for students, probably your LMS or course website. The notebooks can be posted and accessed like any other file, but instructions for the students on how to use this new file type is helpful. Along with the notebook file, you may wish to include:</p>
+<ul class="simple">
+<li><p>Instructions on how to open the .ipynb file (ex. download from here and then upload to Syzygy)</p></li>
+<li><p>Instructions for how to complete the activity in the notebook</p></li>
+<li><p>Instructions for submitting their completed notebook</p></li>
+<li><p>General resources for help with Python, Jupyter notebooks, Syzygy, etc.</p></li>
+<li><p>More specific resources for help with this particular activity</p></li>
+<li><p>Where to go for additional support (ex. office hours, drop-in tutoring)</p></li>
+<li><p>Any relevant dates</p></li>
+</ul>
+</section>
+<section id="students-complete-the-notebook">
+<h3>2. Students complete the notebook<a class="headerlink" href="#students-complete-the-notebook" title="Link to this heading">#</a></h3>
+<p>Once students have access to the notebook, they will need to work on it either locally on their own machine or a web-based platform for Jupyter notebooks. We recommend Syzygy. Here are two sample workflows for students:</p>
+<p><strong>Working locally:</strong></p>
+<ul class="simple">
+<li><p>Students download the blank notebook from LMS to their computer</p></li>
+<li><p>Students open the blank notebook in the Jupyter notebook interface (or other local editor)</p></li>
+<li><p>Students complete the notebook and save the file</p></li>
+<li><p>Students upload the complete notebook to LMS submission page</p></li>
+</ul>
+<p><strong>Syzygy:</strong></p>
+<ul class="simple">
+<li><p>Students download the blank notebook from LMS to their computer</p></li>
+<li><p>Students upload the blank notebook to Syzygy</p></li>
+<li><p>Students complete the notebook and save the file in Syzygy</p></li>
+<li><p>Students download the notebook to their computer</p></li>
+<li><p>Students upload the complete notebook to LMS submission page</p></li>
+</ul>
+</section>
+<section id="notebook-grading-and-feedback">
+<h3>3. Notebook grading and feedback<a class="headerlink" href="#notebook-grading-and-feedback" title="Link to this heading">#</a></h3>
+<p>There are two main options for delivering feedback to students: putting feedback directly in their notebook and using whatever feedback options exist for your LMS. These two options can be mixed, although it should be made clear to students where they need to look to find all of their feedback. The final grade for the notebook (if it is graded) will need to be recorded somewhere other than the notebook (eg. LMS or grade spreadsheet). Without batch downloading and uploading, you will need to download and grade, then potentially re-upload, each student’s notebook one at a time. The method(s) you choose for feedback delivery will guide your grading workflow, so we will discuss potential grading workflows as well.</p>
+<section id="feedback-within-the-notebook">
+<h4>3.1 Feedback within the notebook<a class="headerlink" href="#feedback-within-the-notebook" title="Link to this heading">#</a></h4>
+<p>Feedback in the notebook can exist in code cells or markdown cells. Including any feedback in the notebook itself means re-uploading the notebook for each student as part of the grading process.</p>
+<p><strong>Code cells:</strong></p>
+<p>Feedback in code cells are tests to check if an answer has a correct value or has some desired properties. You can use the <code class="docutils literal notranslate"><span class="pre">assert</span></code> function to print a custom message if a test doesn’t pass. See the examples page for examples of assignments with tests that use this function.</p>
+<p>Here are some other useful functions for a few test types:</p>
+<ul class="simple">
+<li><p>Check if the answer is the right data type:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">callable</span></code>: check if an answer is a callable function.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">isinstance</span></code>: check if an answer matches a given data type, eg. <code class="docutils literal notranslate"><span class="pre">np.ndarray</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Check if the answer has the right properties, eg. matches an initial condition.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.allclose</span></code>: check if an answer takes on the correct values.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">__.shape</span></code>: check the dimensions of an array/matrix.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">len</span></code>: check length of an array.</p></li>
+</ul>
+</li>
+</ul>
+<p>Without automated grading, you will need to copy-paste in tests from your solutions file to each notebook by hand as you grade them. You may also wish to include some tests in the notebook that is given to students so they can get feedback as they work.</p>
+<p><strong>Markdown cells:</strong></p>
+<p>Feedback in markdown cells is very freeform and can look however you want, including rendering mathematical expressions using Tex. Here is where you can type in customized feedback for each student. You may also want to keep track of common comments in your solutions file so you can copy-paste some comments in for efficiency.</p>
+</section>
+<section id="feedback-in-lms-grading-tools">
+<h4>3.2 Feedback in LMS grading tools<a class="headerlink" href="#feedback-in-lms-grading-tools" title="Link to this heading">#</a></h4>
+<p>Depending on the grading tool you use, there are some options for feedback within your LMS. Rubrics, comment boxes and annotations can all be useful tools for delivering feedback to students that they can see without downloading any additional files or leaving the LMS. Grading the notebooks using this method will mean working in at least two windows/tabs simultaneously: running the student’s notebook in one window, potentially pasting in tests to the notebook from another window, and entering their feedback in the grading tool in another window. However, if you do not include any feedback in the notebook, you will not need to re-upload the notebook as part of the grading process.</p>
+<p><strong>Rubrics:</strong></p>
+<ul class="simple">
+<li><p>For each problem, list the tests and marks associated with it</p></li>
+<li><p>You can include aspects of good coding practice that you want to highlight (ex. used a particular function, included comments, etc)</p></li>
+<li><p>Check off passed/failed tests and any other rubric items as you go</p></li>
+</ul>
+<p><strong>Comment boxes:</strong></p>
+<ul class="simple">
+<li><p>Similar to markdown cells (described above)</p></li>
+<li><p>Write in any comments in the comments box of the grading tool:</p>
+<ul>
+<li><p>Free form customized feedback</p></li>
+<li><p>Paste in commonly used comments</p></li>
+<li><p>Paste in any tests that failed</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Annotations:</strong></p>
+<p>If your grading tool allows annotating a pdf or html file and viewing it within the LMS without downloading an additional file, then you may wish to ask students to upload a pdf/html version of their notebook (as well as the .ipynb file). Writing or putting annotations directly on their work can be a more efficient way to give feedback on specific aspects of their work. If you want to run the notebook, you will still need to download the .ipynb file.</p>
+</section>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -432,6 +543,30 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-exchanges-without-extra-tools">File Exchanges without extra tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posting-the-notebook">1. Posting the notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#students-complete-the-notebook">2. Students complete the notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notebook-grading-and-feedback">3. Notebook grading and feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-within-the-notebook">3.1 Feedback within the notebook</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-in-lms-grading-tools">3.2 Feedback in LMS grading tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

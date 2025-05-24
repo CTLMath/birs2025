@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Computational Teaching and Learning in Mathematics at UBC &#8212; BIRS 2025</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d59caa55" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/custom-checkpoint.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'talks/ctlmath';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Software Training for Instructors" href="../software.html" />
+    <link rel="prev" title="Talks" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">BIRS 2025</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../preworkshop.html">Pre-Workshop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Talks</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Computational Teaching and Learning in Mathematics at UBC</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implementation.html">Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../groups.html">Working Groups</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/ctlmath/birs2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/ctlmath/birs2025/issues/new?title=Issue%20on%20page%20%2Ftalks/ctlmath.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/talks/ctlmath.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Computational Teaching and Learning in Mathematics at UBC</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#land-acknowledgement">Land Acknowledgement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mission-goals-and-principles">Mission, Goals and Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mission-statement">Mission Statement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workshop-goals">Workshop Goals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guiding-principles">Guiding Principles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-computing-at-ubc">Mathematical Computing at UBC</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#courses">Courses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-stack">Software Stack</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation">Implementation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-210-introduction-to-mathematical-computing">MATH 210 Introduction to Mathematical Computing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-152-linear-systems">MATH 152 Linear Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-215-elementary-differential-equations-i">MATH 215 Elementary Differential Equations I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-307-applied-linear-algebra">MATH 307 Applied Linear Algebra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-360-introduction-to-mathematical-modelling">MATH 360 Introduction to Mathematical Modelling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-441-projects-in-mathematical-optimization">MATH 441 Projects in Mathematical Optimization</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simulate-student-experience">Simulate Student Experience</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="computational-teaching-and-learning-in-mathematics-at-ubc">
+<h1>Computational Teaching and Learning in Mathematics at UBC<a class="headerlink" href="#computational-teaching-and-learning-in-mathematics-at-ubc" title="Link to this heading">#</a></h1>
+<p><strong>Patrick Walls</strong></p>
+<p><em>May 23, 2025</em></p>
+<section id="land-acknowledgement">
+<h2>Land Acknowledgement<a class="headerlink" href="#land-acknowledgement" title="Link to this heading">#</a></h2>
+<p>BIRS in Banff is located on Treaty 7 territory, the traditional lands of the Stoney Nakoda Nations: the Goodstoney, Chiniki, and Bearspaw First Nations; three Nations of the Blackfoot Confederacy: the Piikani, Kainai and Siksika First Nations; the Tsuut’ina First Nation; and the Métis Nation of Alberta.</p>
+</section>
+<section id="mission-goals-and-principles">
+<h2>Mission, Goals and Principles<a class="headerlink" href="#mission-goals-and-principles" title="Link to this heading">#</a></h2>
+<section id="mission-statement">
+<h3>Mission Statement<a class="headerlink" href="#mission-statement" title="Link to this heading">#</a></h3>
+<p>For students to learn transferable knowledge and skills in computational thinking for mathematics.</p>
+</section>
+<section id="workshop-goals">
+<h3>Workshop Goals<a class="headerlink" href="#workshop-goals" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Outline a set of standards for computational teaching and learning in mathematics</p></li>
+<li><p>Provide explicit software training for instructors</p></li>
+<li><p>Create and share computational learning materials</p></li>
+</ul>
+</section>
+<section id="guiding-principles">
+<h3>Guiding Principles<a class="headerlink" href="#guiding-principles" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Mathematics before computing</p></li>
+<li><p>Design for scale</p></li>
+<li><p>Language agnostic</p></li>
+<li><p>Align with open source community</p></li>
+<li><p>Exploit institutional inertia</p></li>
+<li><p>Keep it simple</p></li>
+</ul>
+</section>
+</section>
+<section id="mathematical-computing-at-ubc">
+<h2>Mathematical Computing at UBC<a class="headerlink" href="#mathematical-computing-at-ubc" title="Link to this heading">#</a></h2>
+<section id="challenges">
+<h3>Challenges<a class="headerlink" href="#challenges" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Scale</strong>: How do we design curriculum to serve hundreds or thousands of students?</p></li>
+<li><p><strong>Student prior knowledge</strong>: How do we design curriculum for students with no prior knowledge of mathematical software and computing?</p></li>
+<li><p><strong>Instructor prior knowledge</strong>: How do we design curriculum for instructors with no prior knowledge of mathematical software and computing?</p></li>
+<li><p><strong>Limited resources</strong>: How do we design new curriculum using only the resources that we already have?</p></li>
+<li><p><strong>Sustainability</strong>: How do we design curriculum that will last?</p></li>
+</ul>
+</section>
+<section id="courses">
+<h3>Courses<a class="headerlink" href="#courses" title="Link to this heading">#</a></h3>
+<p>Courses where mathematical computing is <strong>integral</strong> to the learning objectives:</p>
+<ul class="simple">
+<li><p>MATH 210 Introduction to Mathematical Computing</p></li>
+<li><p>MATH 360 Introduction to Mathematical Modelling</p></li>
+<li><p>MATH 441 Projects in Mathematical Optimization</p></li>
+<li><p>MATH 461 Projects in Mathematical Modelling</p></li>
+</ul>
+<p>Courses where mathematical computing is <strong>complementary</strong> to the learning objectives:</p>
+<ul class="simple">
+<li><p>MATH 152 Linear Systems</p></li>
+<li><p>MATH 215 Elementary Differential Equations I</p></li>
+<li><p>MATH 221 Matrix Algebra</p></li>
+<li><p>MATH 223 Linear Algebra</p></li>
+<li><p>MATH 256 Differential Equations</p></li>
+<li><p>MATH 302 Introduction to Probability</p></li>
+<li><p>MATH 307 Applied Linear Algebra</p></li>
+<li><p>MATH 316 Elementary Differential Equations II</p></li>
+</ul>
+<p>See <a class="reference external" href="https://ubcmath.github.io/coursemap/">UBC Math Course Map</a> for more info.</p>
+</section>
+<section id="software-stack">
+<h3>Software Stack<a class="headerlink" href="#software-stack" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python.org">Python</a> is an open source general purpose programming language</p></li>
+<li><p><a class="reference external" href="https://jupyter.org">Jupyter</a> is a web-based development environment for creating computational documents</p></li>
+<li><p><a class="reference external" href="https://syzygy.ca">Syzygy</a> is a collection JupyterHubs integrated with institutional authentication systems</p></li>
+<li><p><a class="reference external" href="https://numpy.org">NumPy</a> is a Python package for numerical computation with arrays</p></li>
+<li><p><a class="reference external" href="https://scipy.org">SciPy</a> is a Python library of algorithms for mathematical computing</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org">Matplotlib</a> is a Python package for mathematical graphics and data visualization</p></li>
+<li><p><a class="reference external" href="https://github.com">GitHub</a> is a web-based platform for collaborating on software projects</p></li>
+<li><p><a class="reference external" href="https://nbgrader.readthedocs.io/en/stable/">nbgrader</a> is a Python package for creating, autograding and managing assignments in Jupyter notebooks</p></li>
+<li><p><a class="reference external" href="https://canvasapi.readthedocs.io">CanvasAPI</a> is a Python package for uploading/downloading data from Canvas</p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a> is a Python package which creates web-based books from computational documents</p></li>
+</ul>
+</section>
+<section id="implementation">
+<h3>Implementation<a class="headerlink" href="#implementation" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Design computational learning materials with Python and Jupyter</p></li>
+<li><p>Publish web-based learning material with Jupyter Book and GitHub</p></li>
+<li><p>Collaborate with instructors to setup Canvas courses and assignments</p></li>
+<li><p>Python TA training</p></li>
+<li><p>nbgrader training for staff/TAs</p></li>
+<li><p>Online Zoom lectures and co-teaching</p></li>
+<li><p>Autograding with nbgrader and CanvasAPI</p></li>
+<li><p>Supervise TAs and staff</p></li>
+<li><p>Python TAs in <a class="reference external" href="https://www.math.ubc.ca/undergraduate/advising-and-resources/drop-help">Math Learning Center (MLC)</a></p></li>
+</ul>
+</section>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+<p>Clone the repo: <code class="docutils literal notranslate"><span class="pre">https://github.com/patrickwalls/examples.git</span></code></p>
+<section id="math-210-introduction-to-mathematical-computing">
+<h3>MATH 210 Introduction to Mathematical Computing<a class="headerlink" href="#math-210-introduction-to-mathematical-computing" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Numerical integration, numerical methods for ordinary differential equations, eigenvalues and eigenvectors</p></li>
+<li><p>100 students 2 sections</p></li>
+<li><p>Prerequisites: Calculus II, Linear Algebra, Differential Equations I</p></li>
+<li><p>Live coding in class</p></li>
+<li><p>Assignments autograded with nbgrader</p></li>
+<li><p>Exams on paper including reading and writing Python code</p></li>
+<li><p><a class="reference external" href="https://patrickwalls.github.io/mathematicalpython">Mathematical Python</a></p></li>
+</ul>
+</section>
+<section id="math-152-linear-systems">
+<h3>MATH 152 Linear Systems<a class="headerlink" href="#math-152-linear-systems" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Linear equations, vector geometry, linear transformations, eigenvalues and eigenvectors</p></li>
+<li><p>1000 students 5 sections</p></li>
+<li><p>Bi-Weekly MATLAB computer labs on Zoom directed by MATLAB TAs</p></li>
+<li><p>MATLAB assignments semi-autograded with mbgrader</p></li>
+<li><p>No prior knowledge of MATLAB</p></li>
+<li><p>Students use <a class="reference external" href="https://matlab.mathworks.com">MATLAB Online</a></p></li>
+<li><p><a class="reference external" href="https://ubcmath.github.io/matlab">MATLAB for UBC Math</a></p></li>
+</ul>
+</section>
+<section id="math-215-elementary-differential-equations-i">
+<h3>MATH 215 Elementary Differential Equations I<a class="headerlink" href="#math-215-elementary-differential-equations-i" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>First order equations, second order equations with constant coefficients, Laplace transform, linear systems, 2D nonlinear systems and linearization</p></li>
+<li><p>400 students 3 sections</p></li>
+<li><p>Prerequisites: Calculus II, Linear Algebra I</p></li>
+<li><p>No prior knowledge of Python and Jupyter</p></li>
+<li><p><a class="reference external" href="https://ubcmath.github.io/python/">Python for UBC Math</a></p></li>
+</ul>
+</section>
+<section id="math-307-applied-linear-algebra">
+<h3>MATH 307 Applied Linear Algebra<a class="headerlink" href="#math-307-applied-linear-algebra" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Matrix decompositions LU, QR, SVD and discrete Fourier transform</p></li>
+<li><p>300 students 3 sections</p></li>
+<li><p>Prerequisites: Calculus III and Linear Algebra I</p></li>
+<li><p>No prior knowledge of Python and Jupyter</p></li>
+<li><p><a class="reference external" href="https://ubcmath.github.io/MATH307/">MATH 307 Notes</a></p></li>
+</ul>
+</section>
+<section id="math-360-introduction-to-mathematical-modelling">
+<h3>MATH 360 Introduction to Mathematical Modelling<a class="headerlink" href="#math-360-introduction-to-mathematical-modelling" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>80 students 1 section</p></li>
+<li><p>Flipped classroom</p></li>
+<li><p>Prerequisites: Mathematical Computing and Differential Equations I</p></li>
+<li><p>Builds on Python and Jupyter knowledge and skills from MATH 210</p></li>
+<li><p><a class="reference external" href="https://ubcmath.github.io/MATH360/">MATH 360 Notes</a></p></li>
+</ul>
+</section>
+<section id="math-441-projects-in-mathematical-optimization">
+<h3>MATH 441 Projects in Mathematical Optimization<a class="headerlink" href="#math-441-projects-in-mathematical-optimization" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>40 students 1 section</p></li>
+<li><p>Linear programming, combinatorial optimization, convex optimization</p></li>
+<li><p>Project based with lecture time for collaborative group work</p></li>
+<li><p>Prerequisites: Linear Prgramming</p></li>
+<li><p>Assumes no prior knowledge of Python and Jupyter (but almost all students have MATH 210)</p></li>
+</ul>
+</section>
+</section>
+<section id="simulate-student-experience">
+<h2>Simulate Student Experience<a class="headerlink" href="#simulate-student-experience" title="Link to this heading">#</a></h2>
+<p>Plot the function <span class="math notranslate nohighlight">\(f(x) = e^{-x^2}\)</span> and its derivative <span class="math notranslate nohighlight">\(f'(x)\)</span> on <span class="math notranslate nohighlight">\([-1,1]\)</span>.</p>
+<p>How do the values of <span class="math notranslate nohighlight">\(f'(x)\)</span> correspond to the shape of the graph <span class="math notranslate nohighlight">\(y = f(x)\)</span>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">df</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;$f(x) = exp(-x^2)$ and $f&#39;(x) = -2xexp(-x^2)$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;f(x)&quot;</span><span class="p">,</span><span class="s2">&quot;f&#39;(x)&quot;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/16033b32657037a3998a9c290b650807220655a7e989d67771d5cfdbd94bb210.png" src="../_images/16033b32657037a3998a9c290b650807220655a7e989d67771d5cfdbd94bb210.png" />
+</div>
+</div>
+<p><em>Thanks!</em></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./talks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Talks</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../software.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Software Training for Instructors</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#land-acknowledgement">Land Acknowledgement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mission-goals-and-principles">Mission, Goals and Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mission-statement">Mission Statement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workshop-goals">Workshop Goals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guiding-principles">Guiding Principles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-computing-at-ubc">Mathematical Computing at UBC</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#courses">Courses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-stack">Software Stack</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation">Implementation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-210-introduction-to-mathematical-computing">MATH 210 Introduction to Mathematical Computing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-152-linear-systems">MATH 152 Linear Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-215-elementary-differential-equations-i">MATH 215 Elementary Differential Equations I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-307-applied-linear-algebra">MATH 307 Applied Linear Algebra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-360-introduction-to-mathematical-modelling">MATH 360 Introduction to Mathematical Modelling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-441-projects-in-mathematical-optimization">MATH 441 Projects in Mathematical Optimization</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simulate-student-experience">Simulate Student Experience</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By CTLMath
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
