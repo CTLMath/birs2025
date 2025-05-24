@@ -7,7 +7,9 @@ chapters:
   title: Resources
 - file: examples
   title: Examples
-- file: talks
+- file: talks/index.md
+  sections:
+  - file: talks/ctlmath.ipynb
 - file: software
   title: Software
 - file: design
