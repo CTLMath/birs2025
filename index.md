@@ -32,7 +32,7 @@ See the [BIRS Events Page](https://www.birs.ca/events/2025/2-day-workshops/25w20
 |        | 17:00 | [Patrick Walls: Computational Teaching and Learning in Mathematics at UBC](talks/ctlmath.ipynb) |
 |        | 18:30 | Dinner |
 | May 24 | 07:00 | Breakfast (courtesy of [PIMS](https://www.pims.math.ca)) |
-|        | 09:00 | [Instructional Design for Computational Teaching](design.md) |
+|        | 09:00 | [Instructional Design for Computational Teaching](design.ipynb) |
 |        | 10:30 | Break |
 |        | 11:00 | [Strategies for Implementation](implementation) |
 |        | 12:00 | Lunch (courtesy of [PIMS](https://www.pims.math.ca)) |

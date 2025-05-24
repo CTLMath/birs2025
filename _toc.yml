@@ -12,7 +12,7 @@ chapters:
   - file: talks/ctlmath.ipynb
 - file: software
   title: Software
-- file: design
+- file: design.ipynb
   title: Design
 - file: implementation
   title: Implementation
