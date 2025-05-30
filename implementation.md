@@ -2,7 +2,7 @@
 
 We will explore different systems of varying complexity to share, collect, grade and return computational documents. The simplest workflow involves Syzygy, a learning management system (LMS) and manual grading. We will also describe a workflow involving Syzygy, LMS, nbgrader and LMS API to manage, autograde and upload grades and feedback for thousands of students.
 
-## File Exchanges without extra tools
+## File exchanges without extra tools
 
 You will need to plan out how to deliver notebooks to students, how the students will work in the notebooks, how you will grade their notebooks, and how the students will view the feedback on their notebooks.
 
@@ -80,3 +80,7 @@ Depending on the grading tool you use, there are some options for feedback withi
 **Annotations:**
 
 If your grading tool allows annotating a pdf or html file and viewing it within the LMS without downloading an additional file, then you may wish to ask students to upload a pdf/html version of their notebook (as well as the .ipynb file). Writing or putting annotations directly on their work can be a more efficient way to give feedback on specific aspects of their work. If you want to run the notebook, you will still need to download the .ipynb file. 
+
+## Using nbgrader and Canvas API
+
+*Under construction*

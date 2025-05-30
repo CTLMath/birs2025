@@ -9,9 +9,10 @@ chapters:
   title: Examples
 - file: talks/index.md
   sections:
-  - file: talks/ctlmath.ipynb
-- file: software
-  title: Software
+  - file: talks/math.ipynb
+    title: Mathematics Education
+  - file: talks/physics.md
+    title: Physics Education
 - file: design.ipynb
   title: Design
 - file: implementation
